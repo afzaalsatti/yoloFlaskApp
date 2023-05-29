@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>File Upload Example</title>
+	<style>
+	.ok{
+		
+		font-size: 15px;
+	}
+	.op{
+		height: 30px;
+    width: 89px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 16px;
+	background: lightgray;
+    color: black;
+    
+		cursor: pointer;
+	}
+	.op:hover{
+		background: #717ee3;
+    color: white;
+	}
+		
+	
+	</style>
+</head>
+<body>
+	<div class="center">
+		<div style="text-align: center; margin-top: 30px;"> 
+			<h3>Image/Video Processing using Yolov5 & Yolov8</h3>
+			<span style="font-size: 14px;margin-top: 20px;"> upload image/video file for processing using Yolov5 and Yolov8 </span>
+		</div>
+		
+		<form method="POST" action="/upload_file" enctype="multipart/form-data">
+			<div style="text-align: center; margin-top: 20px;">
+				<input class="ok" type="file" name="file">
+			    
+			</div>
+			<div style="text-align: center; margin-top: 10px;">
+				<button class="op">Submit</button>
+			    
+			</div>
+			
+		</form>
+	</div>
+	
+</body>
+</html>
