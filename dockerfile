@@ -3,6 +3,7 @@ WORKDIR /
 ADD . /project
 RUN pip install --upgrade pip
 RUN apt-get update && apt-get install -y libgl1-mesa-glx
+RUN apt-get update && apt-get install -y ffmpeg
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY yolov5 /home
